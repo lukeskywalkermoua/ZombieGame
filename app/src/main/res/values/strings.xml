@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">ZombieGame</string>
+    <string name="app_name">ZombieWorld</string>
+    <string name="welcome__text">Welcome To ZombieWorld</string>
+    <string name="creator_name">Created by: Luke Moua</string>
 </resources>
