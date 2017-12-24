@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //Another splash activity that only shows screen for 4 seconds
     private class StoryLauncher extends Thread {
 
         //Non-changing int for set screen display time
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             //Need to create an intent to change activities each time you want to switch from one to another
-            //Params, switches from this activity to the next which in this case is MainActivity
+            //Params, switches from this activity to the next which in this case is GameActivity
             Intent intent = new Intent(MainActivity.this, GameActivityOne.class);
             //Start the activity transition
             startActivity(intent);
