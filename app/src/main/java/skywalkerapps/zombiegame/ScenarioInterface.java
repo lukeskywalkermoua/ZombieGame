@@ -11,7 +11,11 @@ package skywalkerapps.zombiegame;
 
 public interface ScenarioInterface {
 
+    //Returns the name of the scene
     public String getScenarioName();
+
+    //Returns the description of the scene
+    public String describeScene();
 
     //Possibly use an array to hold the string options
     //when implementing code

@@ -2,6 +2,9 @@ package skywalkerapps.zombiegame;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * App Game: ZombieWorld
@@ -21,8 +24,11 @@ import android.os.Bundle;
  */
 public class MainActivity extends AppCompatActivity {
 
-    //Declare class variables here, buttons etc.
+    //Create the beginning scene object
+    //All ascpects of this scene will be retrieve though this object name
+    StartScenario myStartScenario = new StartScenario();
 
+    //Declare class variables here, buttons etc.
 
     //onCreate() All code inside this method will be executed first when the app starts
     @Override
@@ -30,7 +36,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Create a text that is implemented by the StartScenario
+        //method describeScene(), which describes the scene
+        TextView myText = (TextView)findViewById(R.id.text_a1);
+        myText.setText(myStartScenario.describeScene());
+
+
+
         //TODO create a second activity and try to switch between activities
+        //Create an intent to move to welcome screen
 
 
 
