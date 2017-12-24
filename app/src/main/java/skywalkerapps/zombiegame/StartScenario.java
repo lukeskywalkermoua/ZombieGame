@@ -20,8 +20,7 @@ public class StartScenario implements ScenarioInterface{
 
     //Returns the name of the scene
     public String describeScene() {
-        return "The sound of an air-raid siren wakes you up as you panick and stumble to figure" +
-                " out what is going on.";
+        return "Zombies are everywhere, DECIDE YOUR FATE";
     }
 
     //Possibly use an array to hold the string options
