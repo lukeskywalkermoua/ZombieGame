@@ -38,7 +38,7 @@ public class StartUpScreen extends AppCompatActivity {
 
         //Non-changing int for set screen display time
         private final int DISPLAY_TIME = 4000;
-        //Uses a try catch block to try and run startupscreen for 10 seconds or 10000 millisecs
+        //Uses a try catch block to try and run startupscreen for 4 seconds or 4000 millisecs
         //Then if success, switches to a new activity screen
         public void run() {
             try {
@@ -51,6 +51,7 @@ public class StartUpScreen extends AppCompatActivity {
             //Need to create an intent to change activities each time you want to switch from one to another
             //Params, switches from this activity to the next which in this case is MainActivity
             Intent intent = new Intent(StartUpScreen.this, MainActivity.class);
+            //Start the activity transition
             startActivity(intent);
             ///.this.finish() will destroy this activity so that you can't go back to it
             StartUpScreen.this.finish();
