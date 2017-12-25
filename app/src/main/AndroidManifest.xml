@@ -28,6 +28,9 @@
         <activity android:name=".LeavingBase">
 
         </activity>
+        <activity android:name=".VehicleEncounter">
+
+        </activity>
     </application>
 
 </manifest>

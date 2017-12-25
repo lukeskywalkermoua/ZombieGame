@@ -37,12 +37,13 @@ public class GameActivityOne extends AppCompatActivity {
 
         //Create an intent so that we can transition to the next screen
         //Params are (current activity, desired acitivy)
-        final Intent gameActivityIntent = new Intent(GameActivityOne.this, LeavingBase.class);
 
         //Set screen resolution to fullscreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //Set to layout design view
         setContentView(R.layout.weaponsloadout);
+
+        final Intent gameActivityIntent = new Intent(GameActivityOne.this, LeavingBase.class);
 
         //TEXT DISPLAY CODE
         //Set the text id of description in weaponsloadout.xml to descriptionText

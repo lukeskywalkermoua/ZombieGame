@@ -17,6 +17,7 @@ public class LeavingBase extends AppCompatActivity{
     //When the activity starts, code in onCreate() method will execute
     TextView leaveBaseDescription;
     Button startGameButton;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -24,7 +25,7 @@ public class LeavingBase extends AppCompatActivity{
         setContentView(R.layout.leavingbase);
 
         //Transition into next activity display
-       // Intent startGameIntent = new Intent(LeavingBase.this, );
+        final Intent startGameIntent = new Intent(LeavingBase.this, VehicleEncounter.class);
 
         //Set
         leaveBaseDescription = findViewById(R.id.leave_base_text);
@@ -40,8 +41,12 @@ public class LeavingBase extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 //What to do after player clicks start game button
-                //Start the game using the button
-             //   startActivity(startGameIntent);
+                //Start the next activity (main game) using the start button
+                startActivity(startGameIntent);
+
+                //Once you start the game, you can't go back to start menu
+                //Must go back to loadouts
+                LeavingBase.this.finish();
             }
         });
     }

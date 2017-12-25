@@ -29,7 +29,7 @@ public class AbandonedVehicleScenario implements ScenarioInterface {
     //These will vary, and will need to be implemented in
     //each different scenario class
     public String optionOne(){
-        return "A)Loot it";
+        return "A) Loot it";
     };
     public String optionTwo(){
         return "B) Attempt to start it";
@@ -38,27 +38,25 @@ public class AbandonedVehicleScenario implements ScenarioInterface {
         return "C) Honk the horn";
     };
     public String optionFour(){
-        return "Move on";
+        return "D) Move on";
     };
 
     //The consequences that will happen depending on
     //which decisions the player makes. Each choice they
     //make will have two results, good or bad consequence
-
     //Bad scenario for optionA
     public String resultOne(){
         return "You made too much noise while looting and zombies killed you...";
     };
-
     //TODO Maybe later in the future add some class of item to this
     //Good scenario for optionA
     public String resultTwo(){
         //Goodies can be food/ammo/medical supplies etc.
-        return "You found some goodies";
+        return "You found nothing but trash..";
     };
     //Bad scenario for optionA
     public String resultThree(){
-        return "Hmmm...car won't even crank...must be a dead battery";
+        return "ZOMBIE IN THE BACKSEAT! YOU ARE DEAD";
     };
     //Good scenario for optionB
     public String resultFour(){
@@ -71,10 +69,9 @@ public class AbandonedVehicleScenario implements ScenarioInterface {
         return "A zombie horde heard the noise, but you got away!";
     };
     public String resultSeven(){
-        return "You found nothing but trash...";
+        return "You decided to not take the risk and move on...";
     };
     public String resultEight(){
-
-        return "A ZOMBIE IN THE BACKSEAT!!!";
+        return "A ZOMBIE IN THE BACKSEAT!!! YOU'RE DEAD";
     };
 }
