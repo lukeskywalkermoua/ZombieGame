@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import scenario.consequences.StartScenario;
 
 /**
  * App Game: ZombieWorld

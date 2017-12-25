@@ -1,4 +1,6 @@
-package skywalkerapps.zombiegame;
+package scenario.consequences;
+
+import scenario.consequences.ScenarioInterface;
 
 /**
  * The beginning scene where the player starts off at
@@ -6,7 +8,7 @@ package skywalkerapps.zombiegame;
  * Created by Student on 12/23/2017.
  */
 
-public class StartScenario implements ScenarioInterface{
+public class StartScenario implements ScenarioInterface {
 
     //Constructor
     public StartScenario() {
@@ -31,55 +33,45 @@ public class StartScenario implements ScenarioInterface{
     //These will vary, and will need to be implemented in
     //each different scenario class
     public String optionOne() {
-        String Aoption = "A)";
-        return "";
+        return "A) ";
     };
     public String optionTwo() {
-        String Aoption = "B)";
-        return Aoption;
+
+        return "B) ";
     };
     public String optionThree() {
-        String Coption = "C)";
-        return Coption;
+        return "C) ";
     };
     public String optionFour() {
-        String Doption = "D)";
-        return Doption;
+
+        return "D) ";
     };
 
     //The consequences that will happen depending on
     //which decisions the player makes. Each choice they
     //make will have two results, good or bad consequence
     public String resultOne() {
-        String resultA = "";
-        return resultA;
+        return " ";
     };
     public String resultTwo() {
-        String resultB = "";
-        return resultB;
+        return " ";
     };
     public String resultThree() {
-        String resultC = "";
-        return resultC;
+        return "";
     };
     public String resultFour() {
-        String resultD = "";
-        return resultD;
+        return "";
     };
     public String resultFive() {
-        String resultE = "";
-        return resultE;
+        return "";
     };
     public String resultSix() {
-        String resultF = "";
-        return resultF;
+        return "";
     };
     public String resultSeven() {
-        String resultG = "";
-        return resultG;
+        return "";
     };
     public String resultEight() {
-        String resultH = "";
-        return resultH;
+        return "";
     };
 }

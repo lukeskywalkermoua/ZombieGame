@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-        </activity>
 
+        </activity>
         <activity android:name=".StartUpScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +21,13 @@
         <activity android:name=".GameActivityOne">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
     </activity>
+        <activity android:name=".LeavingBase">
+
+        </activity>
     </application>
 
 </manifest>

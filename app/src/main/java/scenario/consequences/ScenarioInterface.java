@@ -1,4 +1,4 @@
-package skywalkerapps.zombiegame;
+package scenario.consequences;
 
 /**
  * Scenario interface is the building block of the different
