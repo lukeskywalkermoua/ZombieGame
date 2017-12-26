@@ -21,6 +21,12 @@ public class GameActivityOne extends AppCompatActivity {
     private final String MY_WEAPON_TWO = "Shotgun";
     private final String MY_WEAPON_THREE = "Machete";
     private final String MY_WEAPON_FOUR = "Crossbow";
+    //String of description, doesn't change
+    public final String SCENE_DESCRIPTION = "Choose a weapon: " +
+            "\nPistol: Great medium range, loud, highly customizable......." +
+            "\n\nShotgun: Great shortrange, loud, but hard to miss with this." +
+            "\n\nMachete: Great for chopping zombie heads and survival......." +
+            "\n\nCrossbow: Great shortrange, reusable ammo, long reload times";
 
     //Create buttons variables
     public Button weaponOneButton;
@@ -29,8 +35,10 @@ public class GameActivityOne extends AppCompatActivity {
     public Button weaponFourButton;
     //Create text description display
     public TextView descriptionText;
-
+    //String variable that is suppose to save the weapon choice the player chooses
+    //for future reference (such as using the weapon in the game)
     public String weaponChoice;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,17 +51,14 @@ public class GameActivityOne extends AppCompatActivity {
         //Set to layout design view
         setContentView(R.layout.weaponsloadout);
 
+        //Create an intent to switch activities
         final Intent gameActivityIntent = new Intent(GameActivityOne.this, LeavingBase.class);
 
         //TEXT DISPLAY CODE
         //Set the text id of description in weaponsloadout.xml to descriptionText
         descriptionText = findViewById(R.id.textView4);
         //Set the text description on TextView display
-        descriptionText.setText("Choose a weapon: " +
-                "\nPistol: Great medium range, loud, highly customizable......." +
-                "\n\nShotgun: Great shortrange, loud, but hard to miss with this." +
-                "\n\nMachete: Great for chopping zombie heads and survival......." +
-                "\n\nCrossbow: Great shortrange, reusable ammo, long reload times");
+        descriptionText.setText(SCENE_DESCRIPTION);
 
         //BUTTON1 CODE
         //Set these buttons to the id of the ones in xml file user display
@@ -68,10 +73,8 @@ public class GameActivityOne extends AppCompatActivity {
             public void onClick(View v) {
                 //If weapon_button1 is pressed, store the weapon name to weaponChoice variable
                 weaponChoice = MY_WEAPON_ONE;
-
                 //When done, transition to the next activity using gameActivityIntent created above
                 startActivity(gameActivityIntent);
-
             }
         });
         //BUTTON2 CODE
@@ -86,10 +89,8 @@ public class GameActivityOne extends AppCompatActivity {
             public void onClick(View view) {
                 //If weapon_button2 is pressed, store the weapon name to weaponChoice variable
                 weaponChoice = MY_WEAPON_TWO;
-
                 //When done, transition to the next activity using gameActivityIntent created above
                 startActivity(gameActivityIntent);
-
             }
         });
         //BUTTON3 CODE
@@ -104,11 +105,8 @@ public class GameActivityOne extends AppCompatActivity {
             public void onClick(View view) {
                 //If weapon_button3 is pressed, store the weapon name to weaponChoice variable
                 weaponChoice = MY_WEAPON_THREE;
-
                 //When done, transition to the next activity using gameActivityIntent created above
                 startActivity(gameActivityIntent);
-
-
             }
         });
         //BUTTON4 CODE
@@ -123,7 +121,6 @@ public class GameActivityOne extends AppCompatActivity {
             public void onClick(View view) {
                 //If weapon_button4 is pressed, store the weapon name to weaponChoice variable
                 weaponChoice = MY_WEAPON_FOUR;
-
                 //When done, transition to the next activity using gameActivityIntent created above
                 startActivity(gameActivityIntent);
 
