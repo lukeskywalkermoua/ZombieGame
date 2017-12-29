@@ -31,6 +31,10 @@
         <activity android:name=".VehicleEncounter">
 
         </activity>
+
+        <activity android:name=".DeathScene">
+
+        </activity>
     </application>
 
 </manifest>

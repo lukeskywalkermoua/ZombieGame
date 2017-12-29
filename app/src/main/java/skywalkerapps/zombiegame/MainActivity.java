@@ -12,9 +12,7 @@ import scenario.consequences.StartScenario;
  * App Game: ZombieWorld
  *
  * Game Description:
- * Decision making game forces the user with limited options
- * that the user must take. With skill, knowledge, and a whole lot of luck,
- * the player just might survive the apocalypse!
+ * Code for second splash screen
  *
  * Creator & Company Name:
  * Luke Moua
@@ -25,12 +23,6 @@ import scenario.consequences.StartScenario;
  *
  */
 public class MainActivity extends AppCompatActivity {
-
-    //Create the beginning scene object
-    //All ascpects of this scene will be retrieve though this object name
-    StartScenario myStartScenario = new StartScenario();
-
-    //Declare class variables here, buttons etc.
 
     //onCreate() All code inside this method will be executed first when the app starts
     @Override
@@ -44,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         //Create a text that is implemented by the StartScenario
         //method describeScene(), which describes the scene
         TextView myText = findViewById(R.id.text_a1);
-        myText.setText(myStartScenario.describeScene());
+        myText.setText("How will you survive?..");
 
         //Create a StoryLauncher telling player what they have to do
         StoryLauncher launchIt = new StoryLauncher();

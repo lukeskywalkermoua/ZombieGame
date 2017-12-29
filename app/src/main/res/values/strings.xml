@@ -5,4 +5,5 @@
     <string name="company_name">SkywalkerApps</string>
     <string name="start_game">START SURVIVAL</string>
     <string name="image_desc">abandoned car</string>
+    <string name="death_text">YOU ARE DEAD.....</string>
 </resources>

@@ -1,5 +1,7 @@
 package scenario.consequences;
 
+import scenario.consequences.ScenarioInterface;
+
 /**
  * Player sees abandoned vehicle, what do they do?
  * Options are to search it, attempt to start it, or move on
