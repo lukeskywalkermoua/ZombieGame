@@ -3,6 +3,7 @@ package skywalkerapps.zombiegame;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import skywalkerapps.zombiegame.R;
 
@@ -24,8 +25,6 @@ public class DeathScene extends AppCompatActivity{
 
         //Set to implement layout deathscene1.xml file
         setContentView(R.layout.deathscene1);
-
-
 
 
 

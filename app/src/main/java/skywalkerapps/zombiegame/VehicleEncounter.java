@@ -92,6 +92,7 @@ public class VehicleEncounter extends AppCompatActivity{
                     //Kill the stack
                     finish();
                 } else {
+                    //If player survives, progress to the next scene
                     Toast.makeText(VehicleEncounter.this, vehicleScene.resultTwo(), Toast.LENGTH_LONG).show();
                     //Progress to next activity
                 }
@@ -112,6 +113,7 @@ public class VehicleEncounter extends AppCompatActivity{
                     //Kill the stack
                     finish();
                 } else {
+                    //If player survives scenario, progress tot he next scene
                     Toast.makeText(VehicleEncounter.this, vehicleScene.resultFour(), Toast.LENGTH_LONG).show();
                     //Progress to next activity
                 }
@@ -130,6 +132,7 @@ public class VehicleEncounter extends AppCompatActivity{
                     //Kill the stack
                     finish();
                 } else {
+                    //If player survives this scenario, progress to the next scene
                     Toast.makeText(VehicleEncounter.this, vehicleScene.resultSix(), Toast.LENGTH_LONG).show();
                     //Progress to next activity
 
@@ -140,8 +143,7 @@ public class VehicleEncounter extends AppCompatActivity{
         buttonOptionD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(VehicleEncounter.this, vehicleScene.resultSeven(), Toast.LENGTH_LONG).show();
-
+                //Toast.makeText(VehicleEncounter.this, vehicleScene.resultSeven(), Toast.LENGTH_LONG).show();
                 //Progress to next activity
             }
         });
